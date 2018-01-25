@@ -17,13 +17,3 @@ end
 def move(board, index, value = "X")
   board[index] = value
 end
-
-def turn(board)
-  puts "Please enter 1-9:"
-  input = input_to_index(gets.strip)
-  if (valid_move?(board,input))
-    move(board, input)
-    display_board(board)
-  end
-  
-end
